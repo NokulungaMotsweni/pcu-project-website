@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: solid 1px red;
+}
+
+body {
+    font-family: Roboto mono, sans-serif;
+}
+
+
+    header {
+        height: 100vh;
+        background-image: url(https://picsum.photos/id/668/1000/800);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #intro {
+        background-color: rgb(50, 49, 49);
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+    }
+    
+    #intro > div {
+        display: flex;
+        height: 50px;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        color: white;
+        width: 100%;
+    }
+    
+    #intro div img {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;  
+    
+    }
+    
+    #articles { 
+        background-color: antiquewhite;
+        padding: 20px;
+        overflow: auto;
+    }
+    
+    #articles > article {
+        gap: 4rem;
+        margin: 4rem auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #articles > img {
+        width: 100%; /* Image takes up half the width of its div */
+        height: auto;
+        padding-right: 100px;
+    }
+    
+    #articles > h1 {
+        align-self: flex-start;
+    }
+    
+    #articles div h1, #articles div p {
+        margin-bottom: 10px;
+    
+    }
+    
+    #articles > article:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    
+    #articles h1 {
+        margin-bottom: 1rem;
+        font-weight: 900;
+        align-self: flex-start;
+    }
+    
+    footer {
+        background-color: rgb(50, 49, 49);
+        color: white;
+        height: auto;
+        padding: 50px;
+        display: block;
+        text-align: center;
+    }
+    
+    footer div ul {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-content: center;
+        list-style-type: none;
+        margin-top: 50px;
+    }
+    
+    footer div img {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        display: block;
+    }
+    
+@media (max-width: 800px) {
+    #intro > div {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #intro {
+        height: 700px;
+    }
+
+    #intro > div {
+        flex-direction: column;
+    }
+
+    #intro div img {
+        width: 100px;
+        height: 100px;
+    }
+    #articles { 
+        padding: 20px;
+        flex-direction: column;
+       }
+    
+    #article > article {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-content: center; 
+    }
+    
+    #articles > img {
+        height: auto;
+        width: fit-content;
+    }
+    
+    #articles > p {
+        width: fit-content;
+        align-self: flex-start;
+    }
+    #articles > article:nth-child(odd) {
+        flex-direction: column;
+    }
+    #articles > article:nth-child(even) {
+        flex-direction: column;
+    }
+
+    #article div h1, article div p {
+        margin-bottom: 10px;
+    
+    }    
+
+    footer div ul {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        list-style-type: none;
+        margin-top: 50px;
+    }
+}
+
