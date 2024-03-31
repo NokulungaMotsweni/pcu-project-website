@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+
+:root {
+    font-family: "Madimi One", sans-serif;
+    font-size: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: baseline;
+}
+
+@media (max-width: 800px){
+    section {
+        flex-direction: column-reverse;
+    }
+}
+
+section div{
+    background-color: rgb(23, 127, 78);
+    margin: 5px;
+    flex-basis: 0;
+    flex-grow: 1;
+    
+}
+
+section div:nth-child(2) {
+    background-color: rgb(177, 80, 173);
+}
+
+section div:nth-child(3) {
+    background-color: coral;
+}
