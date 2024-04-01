@@ -7,136 +7,138 @@
     outline: solid 1px red;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     font-family: Roboto mono, sans-serif;
 }
 
 
-    header {
-        height: 100vh;
-        background-image: url(https://picsum.photos/id/668/1000/800);
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+header {
+    height: 100vh;
+    background-image: url(https://picsum.photos/id/668/1000/800);        
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
     
-    #intro {
-        background-color: rgb(50, 49, 49);
-        height: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+#intro {
+    background-color: rgb(50, 49, 49);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
 
     a {
         text-decoration: none;
         color: white;
-    }
+}
     
-    #intro > div {
-        display: flex;
-        flex: 1;
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
-        justify-content: space-between;
-        color: white;
+#intro > div {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    color: white;
+}
+    
+#intro div img {
+    width: 100px; 
+    height: 100px; 
+    margin: auto; 
+}
 
-    }
+#articles { 
+    background-color: antiquewhite;
+    padding: 20px;
+    overflow: auto;
+}
     
-    #intro div img {
-        width: 100px; 
-        height: 100px; 
-        margin: auto; 
-    }
-
-    #articles { 
-        background-color: antiquewhite;
-        padding: 20px;
-        overflow: auto;
-    }
+#articles > article {
+    gap: 4rem;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
     
-    #articles > article {
-        gap: 4rem;
-        margin: 4rem auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+#articles > img {
+    width: 100%; 
+    height: auto;
+    padding-right: 100px;
+}
     
-    #articles > img {
-        width: 100%; /* Image takes up half the width of its div */
-        height: auto;
-        padding-right: 100px;
-    }
+#articles > h1 {
+    align-self: flex-start;
+}
     
-    #articles > h1 {
-        align-self: flex-start;
-    }
+#articles div h1, #articles div p {
+    margin-bottom: 10px;
+}
     
-    #articles div h1, #articles div p {
-        margin-bottom: 10px;
+#articles > article:nth-child(even) {
+    flex-direction: row-reverse;
+}
     
-    }
+#articles h1 {
+    margin-bottom: 1rem;
+    font-weight: 900;
+    align-self: flex-start;
+}
     
-    #articles > article:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-    
-    #articles h1 {
-        margin-bottom: 1rem;
-        font-weight: 900;
-        align-self: flex-start;
-    }
-    
-    footer {
-        background-color: rgb(50, 49, 49);
-        color: white;
-        height: auto;
-        padding: 50px;
-        display: block;
-        text-align: center;
-    }
+footer {
+    background-color: rgb(50, 49, 49);
+    color: white;
+    height: auto;
+    padding: 50px;
+    display: block;
+    text-align: center;
+}
     
 ul {
-        list-style-type: none;
-        display: flex;
-        gap: 40px;
-        max-width: 1200px;
-        margin: 0 auto;
-        justify-content: center;
-        align-items: center;
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
     }
     
 .icon {
-        display: block;
-        width: 80px;
-        height: 80px;
-        transition: all 0.3s ease-out;
+    display: block;
+    width: 80px;
+    height: 80px;
+    transition: all 0.3s ease-out;
 }
 
 .icon path {
-        fill: white;
-        transition: all 0.3s ease-out;
+    fill: white;
+    transition: all 0.3s ease-out;
 }
 
 .icon:hover {
-        transform: scale(1.4);
+    transform: scale(1.4);
 }
 
 .icon:hover path#facebook {
-        fill: #316FF6;
+    fill: #316FF6;
 }
 
 .icon:hover path#instagram {
-        fill: #FC0;
+    fill: #FC0;
 }
     
 .icon:hover path#tube {
-        fill: #F00;
+    fill: #F00;
 }
 
 @media (max-width: 800px) {
